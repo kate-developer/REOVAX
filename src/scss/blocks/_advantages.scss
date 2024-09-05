@@ -1,0 +1,42 @@
+.advantages {
+  margin-top: 62px;
+  margin-bottom: 100px;
+
+  @include mobile {
+    margin-bottom: 60px;
+  }
+}
+
+.advantages__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.add__desc {
+  max-width: 416px;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 20px 30px 24px 30px;
+}
+
+.add__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.add__icon {
+  display: flex;
+
+  background-color: var(--green-color);
+  border-radius: 100%;
+  padding: 14px;
+}
+
+.add__text {
+}

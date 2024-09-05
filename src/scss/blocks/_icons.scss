@@ -1,0 +1,61 @@
+.icons-wrapper {
+  padding: 30px 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.icon {
+  fill: transparent;
+  stroke: transparent;
+  width: 16px;
+  height: 16px;
+}
+
+.icon--search {
+  stroke: var(--orange-color);
+  width: 20px;
+  height: 20px;
+
+  order: 2;
+}
+
+.icon--calculator {
+  stroke: var(--orange-color);
+  width: 17px;
+  height: 20px;
+}
+
+.icon--whatsApp {
+  fill: var(--green-color);
+}
+
+.icon--tg {
+  height: 14px;
+  fill: var(--green-color);
+}
+
+.icon--viber {
+  height: 18px;
+  fill: var(--green-color);
+}
+
+.icon--play-white {
+  fill: #fff;
+}
+
+.icon--credit-card {
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.icon--trending-up {
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}
+.icon--truck {
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,36 @@
+.nav {
+  padding: 0 60px;
+
+  @media (max-width: 886px) {
+    display: none;
+  }
+}
+
+.nav__row {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+.nav__list {
+  display: flex;
+  gap: 111px;
+
+  @media (max-width: 1410px) {
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.nav__list-item {
+  text-transform: uppercase;
+  color: #4c4c4c;
+}
+
+.nav__list-item:hover {
+  color: var(--orange-color);
+}

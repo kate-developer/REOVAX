@@ -1,0 +1,172 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  &__row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      justify-content: space-around;
+    }
+
+    @media (max-width: 472px) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.header__left-side {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.header__right-side {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+
+  @media (max-width: 472px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @include mobile {
+  }
+}
+.logo {
+  max-width: 196px;
+  width: 100%;
+
+  p {
+    margin-top: 4px;
+    opacity: 0.8;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 609px) {
+    max-width: 108px;
+    margin-bottom: 21px;
+  }
+}
+
+.search-btn {
+  border-radius: 100px;
+  padding: 12px 28px;
+  background: #fff7f3;
+}
+
+.search {
+  ::placeholder {
+    color: var(--orange-color);
+    padding-left: 36px;
+  }
+
+  label {
+    position: relative;
+  }
+
+  label::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 28px;
+    z-index: 10;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("./../../img/img/search.png");
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.small-menu {
+  display: none;
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+  }
+}
+
+.button-mobile-small {
+  border-radius: 4px;
+  background: #fff7f3;
+  padding: 6px;
+}
+
+.mobile-burger {
+  z-index: 999;
+}
+
+.calculator {
+  a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--green-color);
+  }
+
+  @media (max-width: 1541px) {
+    display: none;
+  }
+}
+
+.calculator-btn {
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__whatsapp,
+  &__tg,
+  &__viber {
+    border-radius: 100%;
+    background-color: #f3f7f4;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.header__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @media (max-width: 472px) {
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+}
+
+.phone-number {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.mail {
+  opacity: 0.8;
+}

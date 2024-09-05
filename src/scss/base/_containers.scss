@@ -1,0 +1,45 @@
+/* Контейнеры */
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+
+  max-width: var(--container-width);
+  width: 100%;
+
+  @media (max-width: 1857px) {
+    padding: 0 212px;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.container-left {
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+
+  max-width: var(--container-width);
+  width: 100%;
+
+  @media (max-width: 1857px) {
+    padding: 0 212px;
+  }
+
+  @media (max-width: 1700px) {
+    padding-right: 60px;
+  }
+
+  @media (max-width: 1317px) {
+    padding-left: 112px;
+    padding-right: 30px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}

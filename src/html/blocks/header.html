@@ -1,0 +1,82 @@
+<header class="header">
+  <div class="container">
+    <div class="header__row">
+      <div class="header__left-side">
+        <div class="logo">
+          <img
+            src="./../../img/img/logo.png"
+            srcset="./../../img/img/logo@2x.png"
+            alt="Логотип"
+          />
+          <p class="text-2">Ежедневно с 9:00 до 21:00</p>
+        </div>
+
+        <div class="search">
+          <label>
+            <input
+              class="search-btn text-1"
+              type="text"
+              name="search"
+              placeholder="Поиск по сайту"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="calculator text-1">
+        <a href="#!" class="calculator-btn">Калькулятор</a>
+      </div>
+
+      <div class="header__right-side">
+        <div class="socials">
+          <div class="socials__whatsapp">
+            <svg class="icon icon--whatsApp">
+              <use href="./img/svgsprite/sprite.symbol.svg#whatsApp"></use>
+            </svg>
+          </div>
+
+          <div class="socials__tg">
+            <svg class="icon icon--tg">
+              <use href="./img/svgsprite/sprite.symbol.svg#tg"></use>
+            </svg>
+          </div>
+
+          <div class="socials__viber">
+            <svg class="icon icon--viber">
+              <use href="./img/svgsprite/sprite.symbol.svg#viber"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="header__phone">
+          <div class="small-menu">
+            <button class="button-mobile-small">
+              <svg class="icon icon--calculator">
+                <use href="./img/svgsprite/sprite.symbol.svg#calculator"></use>
+              </svg>
+            </button>
+
+            <button class="button-mobile-small button-calculator">
+              <svg class="icon icon--search">
+                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+              </svg>
+            </button>
+
+            <div class="button-mobile-small mobile-burger">
+              <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+              </button>
+            </div>
+          </div>
+
+          <a href="tel:78129268833" class="phone-number">+7 (812) 926-88-33</a>
+          <a href="mailto:info@eco-lom.ru" class="mail text-1"
+            >info@eco-lom.ru</a
+          >
+        </div>
+        <button class="btn header__btn">Перезвоните мне</button>
+      </div>
+    </div>
+  </div>
+</header>
+@@include('mobile-nav.html')
